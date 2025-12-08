@@ -1,5 +1,3 @@
-# Melbourne-tech-guilds
-A repository for the artefacts relating to MTG
 # Melbourne Tech Guilds
 
 > Where Makers Collaborate
