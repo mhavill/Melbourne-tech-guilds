@@ -1,0 +1,263 @@
+<svg viewBox="0 0 800 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roboticsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mechanicsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="deepdiveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="1400" fill="#f8f9fa"/>
+  
+  <!-- Header -->
+  <rect width="800" height="140" fill="url(#headerGrad)"/>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="white" text-anchor="middle">Melbourne Tech Guilds</text>
+  <text x="400" y="105" font-family="Arial, sans-serif" font-size="20" 
+        fill="white" text-anchor="middle" opacity="0.95">Where Makers Collaborate</text>
+  <text x="400" y="128" font-family="Arial, sans-serif" font-size="14" 
+        fill="white" text-anchor="middle" opacity="0.9">melbourne.techguilds.au</text>
+  
+  <!-- What We Do Section -->
+  <rect x="40" y="170" width="720" height="180" fill="white" rx="12" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        fill="#2d3748" text-anchor="middle">What We Do</text>
+  
+  <g transform="translate(80, 220)">
+    <circle cx="15" cy="15" r="8" fill="#667eea"/>
+    <text x="35" y="22" font-family="Arial, sans-serif" font-size="16" fill="#2d3748">
+      Support YOUR individual projects
+    </text>
+  </g>
+  
+  <g transform="translate(80, 260)">
+    <circle cx="15" cy="15" r="8" fill="#667eea"/>
+    <text x="35" y="22" font-family="Arial, sans-serif" font-size="16" fill="#2d3748">
+      Provide mentorship from experienced makers
+    </text>
+  </g>
+  
+  <g transform="translate(80, 300)">
+    <circle cx="15" cy="15" r="8" fill="#667eea"/>
+    <text x="35" y="22" font-family="Arial, sans-serif" font-size="16" fill="#2d3748">
+      Share best practices (GitHub, backups, design)
+    </text>
+  </g>
+  
+  <!-- Stats Section -->
+  <g transform="translate(0, 380)">
+    <rect x="60" y="0" width="200" height="100" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <text x="160" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="bold" 
+          fill="#667eea" text-anchor="middle">~50</text>
+    <text x="160" y="70" font-family="Arial, sans-serif" font-size="14" 
+          fill="#666" text-anchor="middle">Active Members</text>
+    
+    <rect x="300" y="0" width="200" height="100" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <text x="400" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="bold" 
+          fill="#667eea" text-anchor="middle">5</text>
+    <text x="400" y="70" font-family="Arial, sans-serif" font-size="14" 
+          fill="#666" text-anchor="middle">Tech Guilds</text>
+    
+    <rect x="540" y="0" width="200" height="100" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <text x="640" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="bold" 
+          fill="#667eea" text-anchor="middle">100%</text>
+    <text x="640" y="70" font-family="Arial, sans-serif" font-size="14" 
+          fill="#666" text-anchor="middle">Free Advice</text>
+  </g>
+  
+  <!-- Our Guilds Section -->
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        fill="#2d3748" text-anchor="middle">Our 5 Guilds</text>
+  
+  <!-- Guild 1: Robotics -->
+  <g transform="translate(0, 560)">
+    <rect x="40" y="0" width="340" height="110" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <circle cx="80" cy="50" r="30" fill="url(#roboticsGrad)"/>
+    <text x="75" y="58" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🤖</text>
+    <text x="130" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#667eea">Robotics</text>
+    <text x="130" y="62" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      Sensors, AI/ML, Autonomous
+    </text>
+    <text x="130" y="80" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      systems, VLM-contextual
+    </text>
+  </g>
+  
+  <!-- Guild 2: Mechanics -->
+  <g transform="translate(420, 560)">
+    <rect x="0" y="0" width="340" height="110" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <circle cx="40" cy="50" r="30" fill="url(#mechanicsGrad)"/>
+    <text x="35" y="58" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">⚙️</text>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#f5576c">Mechanics</text>
+    <text x="90" y="62" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      CAD/CAM, CNC, 3D Printing
+    </text>
+    <text x="90" y="80" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      Laser cutting, Fabrication
+    </text>
+  </g>
+  
+  <!-- Guild 3: IoT -->
+  <g transform="translate(0, 690)">
+    <rect x="40" y="0" width="340" height="110" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <circle cx="80" cy="50" r="30" fill="url(#iotGrad)"/>
+    <text x="75" y="58" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">📡</text>
+    <text x="130" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00f2fe">IoT</text>
+    <text x="130" y="62" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      RPi, Arduino, ESP32, STM32
+    </text>
+    <text x="130" y="80" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      Home Assistant, Sensors
+    </text>
+  </g>
+  
+  <!-- Guild 4: Coding -->
+  <g transform="translate(420, 690)">
+    <rect x="0" y="0" width="340" height="110" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <circle cx="40" cy="50" r="30" fill="url(#codingGrad)"/>
+    <text x="35" y="58" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">💻</text>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#38f9d7">Coding</text>
+    <text x="90" y="62" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      C/C++, Python, MicroPython
+    </text>
+    <text x="90" y="80" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      Firmware, Arduino IDE
+    </text>
+  </g>
+  
+  <!-- Guild 5: Deep Dive -->
+  <g transform="translate(210, 820)">
+    <rect x="0" y="0" width="380" height="110" fill="white" rx="8" stroke="#e0e0e0" stroke-width="2"/>
+    <circle cx="40" cy="50" r="30" fill="url(#deepdiveGrad)"/>
+    <text x="35" y="58" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🔬</text>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fee140">Deep Dive</text>
+    <text x="90" y="62" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      Applied Math, Analog & Digital Electronics
+    </text>
+    <text x="90" y="80" font-family="Arial, sans-serif" font-size="13" fill="#666">
+      FEA, Engineering Theory, R&D
+    </text>
+  </g>
+  
+  <!-- Member Journey -->
+  <text x="400" y="990" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        fill="#2d3748" text-anchor="middle">Typical Member Journey</text>
+  
+  <g transform="translate(0, 1010)">
+    <!-- Step 1 -->
+    <circle cx="100" cy="30" r="25" fill="#667eea"/>
+    <text x="100" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+          fill="white" text-anchor="middle">1</text>
+    <text x="100" y="75" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">Join with</text>
+    <text x="100" y="93" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">a problem</text>
+    
+    <!-- Arrow -->
+    <path d="M 125 30 L 175 30" stroke="#667eea" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 2 -->
+    <circle cx="240" cy="30" r="25" fill="#667eea"/>
+    <text x="240" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+          fill="white" text-anchor="middle">2</text>
+    <text x="240" y="75" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">Get help</text>
+    <text x="240" y="93" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">from guild</text>
+    
+    <!-- Arrow -->
+    <path d="M 265 30 L 315 30" stroke="#667eea" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 3 -->
+    <circle cx="380" cy="30" r="25" fill="#667eea"/>
+    <text x="380" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+          fill="white" text-anchor="middle">3</text>
+    <text x="380" y="75" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">Learn best</text>
+    <text x="380" y="93" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">practices</text>
+    
+    <!-- Arrow -->
+    <path d="M 405 30 L 455 30" stroke="#667eea" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 4 -->
+    <circle cx="520" cy="30" r="25" fill="#667eea"/>
+    <text x="520" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+          fill="white" text-anchor="middle">4</text>
+    <text x="520" y="75" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">Discover</text>
+    <text x="520" y="93" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">new tech</text>
+    
+    <!-- Arrow -->
+    <path d="M 545 30 L 595 30" stroke="#667eea" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 5 -->
+    <circle cx="660" cy="30" r="25" fill="#667eea"/>
+    <text x="660" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+          fill="white" text-anchor="middle">5</text>
+    <text x="660" y="75" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">Help</text>
+    <text x="660" y="93" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">others</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
+    </marker>
+  </defs>
+  
+  <!-- How to Join Section -->
+  <rect x="40" y="1150" width="720" height="180" fill="white" rx="12" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="400" y="1185" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        fill="#2d3748" text-anchor="middle">How to Join</text>
+  
+  <g transform="translate(80, 1200)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" fill="#2d3748" font-weight="bold">
+      💬 Discord
+    </text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" fill="#666">
+      Join async discussions anytime
+    </text>
+  </g>
+  
+  <g transform="translate(280, 1200)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" fill="#2d3748" font-weight="bold">
+      🎥 Video Meetups
+    </text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" fill="#666">
+      Online demos & workshops
+    </text>
+  </g>
+  
+  <g transform="translate(510, 1200)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" fill="#2d3748" font-weight="bold">
+      🏢 In-Person
+    </text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" fill="#666">
+      Melbourne meetups
+    </text>
+  </g>
+  
+  <rect x="250" y="1260" width="300" height="50" fill="url(#headerGrad)" rx="8"/>
+  <text x="400" y="1292" font-family="Arial, sans-serif" font-size="18" font-weight="bold" 
+        fill="white" text-anchor="middle">melbourne.techguilds.au</text>
+  
+  <!-- Footer -->
+  <text x="400" y="1365" font-family="Arial, sans-serif" font-size="14" 
+        fill="#666" text-anchor="middle">Non-commercial maker community • All advice free</text>
+  <text x="400" y="1385" font-family="Arial, sans-serif" font-size="12" 
+        fill="#999" text-anchor="middle">Empowering makers, one project at a time 🛠️</text>
+</svg>
