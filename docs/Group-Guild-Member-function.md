@@ -11,4 +11,4 @@
 9. Guilds can participate in other Group’s projects by accepting tasks from that group\.
 10. Members will usually have their own projects and tasks
 
-![1765169662920](image/Group-Guild-Member-function/1765169662920.png)
+![Structure](/assets/1765169662920.png)
