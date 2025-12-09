@@ -186,7 +186,7 @@ Comprehensive Trello board template with:
 - Priority labeling system (P0-P3)
 - Role-based task categorization
 
-**Status:** ✅ Complete - ready to implement in Trello
+**Status:** ✅ Complete - ready to implement in Trello - Account: https://trello.com/invite/b/69367bca3b735f340e525453/ATTI482748f8a1f2d56534c455bef4d692a238AFE138/mtg-website-development
 
 ---
 

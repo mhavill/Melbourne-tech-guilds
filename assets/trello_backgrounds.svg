@@ -1,0 +1,239 @@
+<svg viewBox="0 0 1600 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for each background -->
+    <linearGradient id="bg1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bg2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43e97b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bg3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fee140;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bg4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#00f2fe;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- BACKGROUND 1: Tech Circuit Pattern -->
+  <g id="background1">
+    <rect width="800" height="800" fill="url(#bg1Grad)"/>
+    
+    <!-- Circuit board pattern -->
+    <g opacity="0.15" stroke="white" stroke-width="2" fill="none">
+      <!-- Horizontal lines -->
+      <line x1="0" y1="100" x2="800" y2="100"/>
+      <line x1="0" y1="200" x2="800" y2="200"/>
+      <line x1="0" y1="300" x2="800" y2="300"/>
+      <line x1="0" y1="400" x2="800" y2="400"/>
+      <line x1="0" y1="500" x2="800" y2="500"/>
+      <line x1="0" y1="600" x2="800" y2="600"/>
+      <line x1="0" y1="700" x2="800" y2="700"/>
+      
+      <!-- Vertical lines -->
+      <line x1="100" y1="0" x2="100" y2="800"/>
+      <line x1="200" y1="0" x2="200" y2="800"/>
+      <line x1="300" y1="0" x2="300" y2="800"/>
+      <line x1="400" y1="0" x2="400" y2="800"/>
+      <line x1="500" y1="0" x2="500" y2="800"/>
+      <line x1="600" y1="0" x2="600" y2="800"/>
+      <line x1="700" y1="0" x2="700" y2="800"/>
+      
+      <!-- Connection points -->
+      <circle cx="200" cy="200" r="8" fill="white"/>
+      <circle cx="400" cy="300" r="8" fill="white"/>
+      <circle cx="600" cy="400" r="8" fill="white"/>
+      <circle cx="300" cy="600" r="8" fill="white"/>
+      <circle cx="500" cy="100" r="8" fill="white"/>
+      <circle cx="700" cy="500" r="8" fill="white"/>
+      <circle cx="100" cy="400" r="8" fill="white"/>
+    </g>
+    
+    <!-- Hexagon pattern overlay -->
+    <g opacity="0.1" fill="white">
+      <polygon points="150,50 200,80 200,140 150,170 100,140 100,80"/>
+      <polygon points="450,250 500,280 500,340 450,370 400,340 400,280"/>
+      <polygon points="650,450 700,480 700,540 650,570 600,540 600,480"/>
+      <polygon points="250,550 300,580 300,640 250,670 200,640 200,580"/>
+    </g>
+    
+    <text x="400" y="780" font-family="Arial, sans-serif" font-size="14" 
+          fill="white" text-anchor="middle" opacity="0.7">Background 1: Tech Circuit</text>
+  </g>
+  
+  <!-- BACKGROUND 2: Geometric Waves -->
+  <g id="background2" transform="translate(800, 0)">
+    <rect width="800" height="800" fill="url(#bg2Grad)"/>
+    
+    <!-- Wave patterns -->
+    <g opacity="0.2" fill="white">
+      <path d="M 0,100 Q 100,50 200,100 T 400,100 T 600,100 T 800,100 L 800,0 L 0,0 Z"/>
+      <path d="M 0,250 Q 100,200 200,250 T 400,250 T 600,250 T 800,250 L 800,150 L 0,150 Z"/>
+      <path d="M 0,400 Q 100,350 200,400 T 400,400 T 600,400 T 800,400 L 800,300 L 0,300 Z"/>
+      <path d="M 0,550 Q 100,500 200,550 T 400,550 T 600,550 T 800,550 L 800,450 L 0,450 Z"/>
+      <path d="M 0,700 Q 100,650 200,700 T 400,700 T 600,700 T 800,700 L 800,600 L 0,600 Z"/>
+    </g>
+    
+    <!-- Floating circles -->
+    <g opacity="0.15" fill="white">
+      <circle cx="150" cy="200" r="40"/>
+      <circle cx="500" cy="350" r="60"/>
+      <circle cx="650" cy="600" r="35"/>
+      <circle cx="300" cy="500" r="45"/>
+      <circle cx="700" cy="150" r="50"/>
+    </g>
+    
+    <text x="400" y="780" font-family="Arial, sans-serif" font-size="14" 
+          fill="white" text-anchor="middle" opacity="0.7">Background 2: Geometric Waves</text>
+  </g>
+  
+  <!-- BACKGROUND 3: Abstract Nodes Network -->
+  <g id="background3" transform="translate(0, 800)">
+    <rect width="800" height="800" fill="url(#bg3Grad)"/>
+    
+    <!-- Network connections -->
+    <g opacity="0.15" stroke="white" stroke-width="2" fill="none">
+      <line x1="100" y1="100" x2="300" y2="200"/>
+      <line x1="300" y1="200" x2="500" y2="150"/>
+      <line x1="500" y1="150" x2="700" y2="250"/>
+      <line x1="700" y1="250" x2="600" y2="400"/>
+      <line x1="600" y1="400" x2="400" y2="500"/>
+      <line x1="400" y1="500" x2="200" y2="450"/>
+      <line x1="200" y1="450" x2="100" y2="300"/>
+      <line x1="100" y1="300" x2="100" y2="100"/>
+      <line x1="300" y1="200" x2="400" y2="500"/>
+      <line x1="500" y1="150" x2="200" y2="450"/>
+      <line x1="700" y1="250" x2="100" y2="300"/>
+      
+      <line x1="150" y1="600" x2="350" y2="650"/>
+      <line x1="350" y1="650" x2="550" y2="600"/>
+      <line x1="550" y1="600" x2="650" y2="700"/>
+      <line x1="350" y1="650" x2="450" y2="750"/>
+    </g>
+    
+    <!-- Network nodes -->
+    <g opacity="0.2" fill="white">
+      <circle cx="100" cy="100" r="15"/>
+      <circle cx="300" cy="200" r="20"/>
+      <circle cx="500" cy="150" r="18"/>
+      <circle cx="700" cy="250" r="22"/>
+      <circle cx="600" cy="400" r="17"/>
+      <circle cx="400" cy="500" r="19"/>
+      <circle cx="200" cy="450" r="16"/>
+      <circle cx="100" cy="300" r="20"/>
+      
+      <circle cx="150" cy="600" r="14"/>
+      <circle cx="350" cy="650" r="18"/>
+      <circle cx="550" cy="600" r="16"/>
+      <circle cx="650" cy="700" r="15"/>
+      <circle cx="450" cy="750" r="17"/>
+    </g>
+    
+    <!-- Scattered dots -->
+    <g opacity="0.1" fill="white">
+      <circle cx="250" cy="350" r="5"/>
+      <circle cx="450" cy="300" r="6"/>
+      <circle cx="550" cy="450" r="4"/>
+      <circle cx="350" cy="100" r="7"/>
+      <circle cx="150" cy="500" r="5"/>
+      <circle cx="700" cy="500" r="6"/>
+    </g>
+    
+    <text x="400" y="780" font-family="Arial, sans-serif" font-size="14" 
+          fill="white" text-anchor="middle" opacity="0.7">Background 3: Network Nodes</text>
+  </g>
+  
+  <!-- BACKGROUND 4: Gear Collaboration -->
+  <g id="background4" transform="translate(800, 800)">
+    <rect width="800" height="800" fill="url(#bg4Grad)"/>
+    
+    <!-- Large decorative gears -->
+    <g opacity="0.12" stroke="white" stroke-width="3" fill="none">
+      <!-- Gear 1 -->
+      <circle cx="200" cy="200" r="80"/>
+      <g transform="translate(200, 200)">
+        <rect x="-8" y="-90" width="16" height="20" rx="3" fill="white"/>
+        <rect x="70" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-8" y="70" width="16" height="20" rx="3" fill="white"/>
+        <rect x="-90" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-70" y="-70" width="16" height="20" rx="3" fill="white" transform="rotate(45 -62 -60)"/>
+        <rect x="54" y="-70" width="16" height="20" rx="3" fill="white" transform="rotate(-45 62 -60)"/>
+        <rect x="54" y="54" width="16" height="20" rx="3" fill="white" transform="rotate(45 62 62)"/>
+        <rect x="-70" y="54" width="16" height="20" rx="3" fill="white" transform="rotate(-45 -62 62)"/>
+      </g>
+      
+      <!-- Gear 2 -->
+      <circle cx="550" cy="250" r="100"/>
+      <g transform="translate(550, 250)">
+        <rect x="-8" y="-110" width="16" height="20" rx="3" fill="white"/>
+        <rect x="90" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-8" y="90" width="16" height="20" rx="3" fill="white"/>
+        <rect x="-110" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-80" y="-80" width="16" height="20" rx="3" fill="white" transform="rotate(45 -72 -72)"/>
+        <rect x="64" y="-80" width="16" height="20" rx="3" fill="white" transform="rotate(-45 72 -72)"/>
+        <rect x="64" y="64" width="16" height="20" rx="3" fill="white" transform="rotate(45 72 72)"/>
+        <rect x="-80" y="64" width="16" height="20" rx="3" fill="white" transform="rotate(-45 -72 72)"/>
+      </g>
+      
+      <!-- Gear 3 -->
+      <circle cx="300" cy="550" r="90"/>
+      <g transform="translate(300, 550)">
+        <rect x="-8" y="-100" width="16" height="20" rx="3" fill="white"/>
+        <rect x="80" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-8" y="80" width="16" height="20" rx="3" fill="white"/>
+        <rect x="-100" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-75" y="-75" width="16" height="20" rx="3" fill="white" transform="rotate(45 -67 -67)"/>
+        <rect x="59" y="-75" width="16" height="20" rx="3" fill="white" transform="rotate(-45 67 -67)"/>
+        <rect x="59" y="59" width="16" height="20" rx="3" fill="white" transform="rotate(45 67 67)"/>
+        <rect x="-75" y="59" width="16" height="20" rx="3" fill="white" transform="rotate(-45 -67 67)"/>
+      </g>
+      
+      <!-- Gear 4 -->
+      <circle cx="650" cy="600" r="70"/>
+      <g transform="translate(650, 600)">
+        <rect x="-8" y="-80" width="16" height="20" rx="3" fill="white"/>
+        <rect x="60" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-8" y="60" width="16" height="20" rx="3" fill="white"/>
+        <rect x="-80" y="-8" width="20" height="16" rx="3" fill="white"/>
+        <rect x="-60" y="-60" width="16" height="20" rx="3" fill="white" transform="rotate(45 -52 -52)"/>
+        <rect x="44" y="-60" width="16" height="20" rx="3" fill="white" transform="rotate(-45 52 -52)"/>
+        <rect x="44" y="44" width="16" height="20" rx="3" fill="white" transform="rotate(45 52 52)"/>
+        <rect x="-60" y="44" width="16" height="20" rx="3" fill="white" transform="rotate(-45 -52 52)"/>
+      </g>
+    </g>
+    
+    <!-- Connecting lines between gears -->
+    <g opacity="0.08" stroke="white" stroke-width="2" fill="none">
+      <line x1="280" y1="200" x2="450" y2="250"/>
+      <line x1="350" y1="300" x2="300" y2="460"/>
+      <line x1="390" y1="550" x2="580" y2="600"/>
+    </g>
+    
+    <!-- Small accent circles -->
+    <g opacity="0.1" fill="white">
+      <circle cx="100" cy="400" r="30"/>
+      <circle cx="700" cy="100" r="40"/>
+      <circle cx="500" cy="700" r="35"/>
+    </g>
+    
+    <text x="400" y="780" font-family="Arial, sans-serif" font-size="14" 
+          fill="white" text-anchor="middle" opacity="0.7">Background 4: Gear Collaboration</text>
+  </g>
+  
+  <!-- Labels for each quadrant -->
+  <rect x="10" y="10" width="780" height="40" fill="rgba(0,0,0,0.3)" rx="8"/>
+  <text x="400" y="37" font-family="Arial, sans-serif" font-size="18" font-weight="bold"
+        fill="white" text-anchor="middle">Trello Board Backgrounds - Melbourne Tech Guilds</text>
+</svg>

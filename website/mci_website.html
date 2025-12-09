@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Tech Guilds - Maker Community for Engineers & Technicians</title>
+    <meta name="description" content="Join Melbourne's leading tech guild community. Connect with engineers, technicians, and creators. Free mentorship in robotics, IoT, coding, mechanics, and deep tech.">
+    <meta name="keywords" content="Melbourne makers, tech guilds Melbourne, hackerspace Melbourne, robotics community, IoT Melbourne, 3D printing, Arduino Melbourne, Raspberry Pi Melbourne, ESP32 help, electronics community, engineering mentorship, maker community, ESP8266, STM32, Arduino Uno">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .hero .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #2d3748;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .about-card {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .about-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .guilds {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .guild-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .guild-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+        
+        .guild-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .guild-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .guild-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .guild-card li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+        
+        .projects {
+            background: #f7fafc;
+            padding: 4rem 2rem;
+        }
+        
+        .project-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-card h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .join-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .join-section h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .join-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+        }
+        
+        .join-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .join-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .join-card p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Melbourne Tech Guilds</h1>
+        <p class="tagline">Where Melbourne's Makers, Engineers & Technicians Collaborate</p>
+        <div class="cta-buttons">
+            <a href="#join" class="btn btn-primary">Join Our Community</a>
+            <a href="#guilds" class="btn btn-secondary">Explore Guilds</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Who We Are</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>🛠️ Community of Makers</h3>
+                    <p>We're many engineers, technicians, and creative makers with expertise spanning robotics, electronics, mechanics, coding, and deep tech. With hundreds of combined years of industry experience, we share knowledge freely.</p>
+                </div>
+                <div class="about-card">
+                    <h3>🤝 Support for Your Projects</h3>
+                    <p>Stuck on your project? We're here to help. Get advice on your Arduino, ESP32, or Raspberry Pi builds. Learn best practices for version control, backups, and design. We guide and encourage you to complete your projects—and you'll discover new interests along the way.</p>
+                </div>
+                <div class="about-card">
+                    <h3>🤝 Your Tribe of Makers</h3>
+                    <p>Finally, people who speak your language! Whether you're debugging code or designing a chassis, we understand the challenges. Share your projects, get unstuck when frustrated, discover new technologies to explore. Most members work on their own projects with guild support—and many find unexpected interests along the way.</p>
+                </div>
+                <div class="about-card">
+                    <h3>💡 Free Knowledge & Support</h3>
+                    <p>Advice is always free. Materials are cheap and often available. Need experience for your resume? Collaborate on real projects. Looking for employment or manufacturing contacts? Leverage our networks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="guilds" class="section">
+            <h2>Our Guilds</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem;">
+                Each guild is a support community for specific technologies. Bring your project challenges, learn best practices, and discover new interests. Most members focus on their own projects with guild support—collaboration opportunities emerge naturally.
+            </p>
+            <div class="guilds">
+                <div class="guild-card">
+                    <h3>🤖 Robotics</h3>
+                    <ul>
+                        <li>Sensors & Actuators</li>
+                        <li>Location-aware systems</li>
+                        <li>VLM-contextual AI</li>
+                        <li>Emergent behaviour</li>
+                        <li>Machine Learning & AI</li>
+                    </ul>
+                </div>
+                <div class="guild-card">
+                    <h3>⚙️ Mechanics</h3>
+                    <ul>
+                        <li>CAD/CAE/CAM</li>
+                        <li>CNC Machining</li>
+                        <li>Laser Cutting</li>
+                        <li>3D Printing</li>
+                        <li>Design & Fabrication</li>
+                    </ul>
+                </div>
+                <div class="guild-card">
+                    <h3>📡 IoT</h3>
+                    <ul>
+                        <li>Raspberry Pi & Pi Pico</li>
+                        <li>Arduino (Uno, Mega, Nano)</li>
+                        <li>ESP32 & ESP8266</li>
+                        <li>STM32 & ARM Cortex</li>
+                        <li>Home Assistant integration</li>
+                        <li>Sensor networks & LoRa</li>
+                        <li>MQTT & IoT protocols</li>
+                    </ul>
+                </div>
+                <div class="guild-card">
+                    <h3>💻 Coding</h3>
+                    <ul>
+                        <li>C/C++ embedded systems</li>
+                        <li>Python & MicroPython</li>
+                        <li>Arduino IDE & PlatformIO</li>
+                        <li>JavaScript/Node.js</li>
+                        <li>Firmware development</li>
+                        <li>Version control (Git)</li>
+                        <li>Software architecture</li>
+                    </ul>
+                </div>
+                <div class="guild-card">
+                    <h3>🔬 Deep Dive</h3>
+                    <ul>
+                        <li>Applied Mathematics</li>
+                        <li>Analog & Digital Electronics</li>
+                        <li>FEA (Finite Element Analysis)</li>
+                        <li>Engineering theory</li>
+                        <li>Research & Development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="projects">
+        <div class="container">
+            <h2>Project Showcase</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem;">
+                See what our community has been building
+            </p>
+            <div class="project-showcase">
+                <div class="project-card">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <h3>Autonomous Line-Following Robot</h3>
+                        <p>Computer vision-based robot using ESP32 with custom PCB and 3D-printed chassis.</p>
+                        <div class="project-tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Mechanics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏠</div>
+                    <div class="project-content">
+                        <h3>Smart Home Energy Monitor</h3>
+                        <p>Real-time power monitoring integrated with Home Assistant for whole-home automation.</p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Coding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">⚡</div>
+                    <div class="project-content">
+                        <h3>Custom Drone Controller</h3>
+                        <p>Low-latency flight controller with FEA-optimized frame and custom PID tuning.</p>
+                        <div class="project-tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Deep Dive</span>
+                            <span class="tag">Mechanics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="join" class="join-section">
+        <h2>Join Our Community</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 1rem;">Connect with us online and in person</p>
+        <div class="join-options">
+            <div class="join-card">
+                <h3>📱 Discord</h3>
+                <p>Join our async discussions, share projects, and get help anytime.</p>
+                <a href="#" class="btn btn-primary">Join Discord</a>
+            </div>
+            <div class="join-card">
+                <h3>🎥 Video Meetups</h3>
+                <p>Regular online sessions for demos, workshops, and collaboration.</p>
+                <a href="#" class="btn btn-primary">View Schedule</a>
+            </div>
+            <div class="join-card">
+                <h3>🏢 In-Person Events</h3>
+                <p>Meet fellow makers at our Melbourne venues for hands-on sessions.</p>
+                <a href="#" class="btn btn-primary">Find Events</a>
+            </div>
+            <div class="join-card">
+                <h3>✍️ Register</h3>
+                <p>Complete our guided registration to find your guilds and get started.</p>
+                <a href="#register" class="btn btn-primary">Start Registration</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Melbourne Tech Guilds | A non-commercial maker community</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Bringing together engineers, technicians, and creators across robotics, IoT, mechanics, coding, and deep tech</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;"><a href="https://melbourne.techguilds.au" style="color: white;">melbourne.techguilds.au</a></p>
+    </footer>
+</body>
+</html>

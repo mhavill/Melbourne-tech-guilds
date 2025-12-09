@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg1Grad)"/>
+  
+  <!-- Circuit board pattern -->
+  <g opacity="0.15" stroke="white" stroke-width="3" fill="none">
+    <!-- Horizontal lines -->
+    <line x1="0" y1="135" x2="1920" y2="135"/>
+    <line x1="0" y1="270" x2="1920" y2="270"/>
+    <line x1="0" y1="405" x2="1920" y2="405"/>
+    <line x1="0" y1="540" x2="1920" y2="540"/>
+    <line x1="0" y1="675" x2="1920" y2="675"/>
+    <line x1="0" y1="810" x2="1920" y2="810"/>
+    <line x1="0" y1="945" x2="1920" y2="945"/>
+    
+    <!-- Vertical lines -->
+    <line x1="240" y1="0" x2="240" y2="1080"/>
+    <line x1="480" y1="0" x2="480" y2="1080"/>
+    <line x1="720" y1="0" x2="720" y2="1080"/>
+    <line x1="960" y1="0" x2="960" y2="1080"/>
+    <line x1="1200" y1="0" x2="1200" y2="1080"/>
+    <line x1="1440" y1="0" x2="1440" y2="1080"/>
+    <line x1="1680" y1="0" x2="1680" y2="1080"/>
+    
+    <!-- Connection points -->
+    <circle cx="480" cy="270" r="12" fill="white"/>
+    <circle cx="960" cy="405" r="12" fill="white"/>
+    <circle cx="1440" cy="540" r="12" fill="white"/>
+    <circle cx="720" cy="810" r="12" fill="white"/>
+    <circle cx="1200" cy="135" r="12" fill="white"/>
+    <circle cx="1680" cy="675" r="12" fill="white"/>
+    <circle cx="240" cy="540" r="12" fill="white"/>
+    <circle cx="360" cy="945" r="12" fill="white"/>
+    <circle cx="1560" cy="270" r="12" fill="white"/>
+    <circle cx="600" cy="675" r="12" fill="white"/>
+  </g>
+  
+  <!-- Hexagon pattern overlay -->
+  <g opacity="0.1" fill="white" stroke="white" stroke-width="2">
+    <polygon points="360,67.5 480,135 480,270 360,337.5 240,270 240,135"/>
+    <polygon points="1080,337.5 1200,405 1200,540 1080,607.5 960,540 960,405"/>
+    <polygon points="1560,607.5 1680,675 1680,810 1560,877.5 1440,810 1440,675"/>
+    <polygon points="600,742.5 720,810 720,945 600,1012.5 480,945 480,810"/>
+  </g>
+  
+  <!-- Connecting circuit traces -->
+  <g opacity="0.12" stroke="white" stroke-width="2" fill="none">
+    <path d="M 480 270 L 600 270 L 600 405 L 720 405"/>
+    <path d="M 960 405 L 960 540 L 1200 540"/>
+    <path d="M 1440 540 L 1560 540 L 1560 675"/>
+    <path d="M 720 810 L 600 810 L 600 675"/>
+  </g>
+</svg>

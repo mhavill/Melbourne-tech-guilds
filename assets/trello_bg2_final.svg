@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43e97b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg2Grad)"/>
+  
+  <!-- Wave patterns -->
+  <g opacity="0.2" fill="white">
+    <path d="M 0,135 Q 240,67.5 480,135 T 960,135 T 1440,135 T 1920,135 L 1920,0 L 0,0 Z"/>
+    <path d="M 0,337.5 Q 240,270 480,337.5 T 960,337.5 T 1440,337.5 T 1920,337.5 L 1920,202.5 L 0,202.5 Z"/>
+    <path d="M 0,540 Q 240,472.5 480,540 T 960,540 T 1440,540 T 1920,540 L 1920,405 L 0,405 Z"/>
+    <path d="M 0,742.5 Q 240,675 480,742.5 T 960,742.5 T 1440,742.5 T 1920,742.5 L 1920,607.5 L 0,607.5 Z"/>
+    <path d="M 0,945 Q 240,877.5 480,945 T 960,945 T 1440,945 T 1920,945 L 1920,810 L 0,810 Z"/>
+  </g>
+  
+  <!-- Floating circles -->
+  <g opacity="0.15" fill="white">
+    <circle cx="360" cy="270" r="60"/>
+    <circle cx="1200" cy="472.5" r="90"/>
+    <circle cx="1560" cy="810" r="52.5"/>
+    <circle cx="720" cy="675" r="67.5"/>
+    <circle cx="1680" cy="202.5" r="75"/>
+    <circle cx="240" cy="540" r="45"/>
+    <circle cx="960" cy="945" r="55"/>
+  </g>
+  
+  <!-- Small accent circles -->
+  <g opacity="0.1" fill="white">
+    <circle cx="600" cy="135" r="30"/>
+    <circle cx="1440" cy="337.5" r="35"/>
+    <circle cx="480" cy="810" r="28"/>
+    <circle cx="1800" cy="675" r="32"/>
+  </g>
+</svg>
