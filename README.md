@@ -66,7 +66,7 @@ melbourne-tech-guilds/
 ├── README.md                          # This file
 ├── docs/
 │   ├── guild-charter.md               # Governance and community guidelines
-│   ├── organizational-structure.md    # Group, guild, and member relationships
+│   ├── Group-Guild-Member-function.md # Group, guild, and member relationships
 │   └── website-requirements.md        # Feature specifications
 ├── design/
 │   ├── logo/
