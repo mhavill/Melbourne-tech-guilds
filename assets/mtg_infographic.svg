@@ -24,6 +24,11 @@
       <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
     </linearGradient>
+    
+    <!-- Arrow marker definition -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
+    </marker>
   </defs>
   
   <!-- Background -->
@@ -152,10 +157,10 @@
     <text x="35" y="58" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🔬</text>
     <text x="90" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fee140">Deep Dive</text>
     <text x="90" y="62" font-family="Arial, sans-serif" font-size="13" fill="#666">
-      Applied Math, Analog & Digital Electronics
+      Applied Math, Analog and Digital Electronics
     </text>
     <text x="90" y="80" font-family="Arial, sans-serif" font-size="13" fill="#666">
-      FEA, Engineering Theory, R&D
+      FEA, Engineering Theory, R and D
     </text>
   </g>
   
@@ -212,13 +217,6 @@
     <text x="660" y="93" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">others</text>
   </g>
   
-  <!-- Arrow marker definition -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
-    </marker>
-  </defs>
-  
   <!-- How to Join Section -->
   <rect x="40" y="1150" width="720" height="180" fill="white" rx="12" stroke="#e0e0e0" stroke-width="2"/>
   <text x="400" y="1185" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
@@ -238,7 +236,7 @@
       🎥 Video Meetups
     </text>
     <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" fill="#666">
-      Online demos & workshops
+      Online demos and workshops
     </text>
   </g>
   
