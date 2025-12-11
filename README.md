@@ -10,14 +10,14 @@
 
 ## 📋 Table of Contents
 
-- [About](#about)
-- [Project Status](#project-status)
-- [Repository Structure](#repository-structure)
-- [Completed Work](#completed-work)
-- [Active Work](#active-work)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Contact](#contact)
+- [About](## 🎯 About)
+- [Project Status](#-project-status)
+- [Repository Structure](#-repository-structure)
+- [Completed Work](#-completed-work)
+- [Active Work](#-active-work)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [Contact](#-contact)
 
 ---
 
