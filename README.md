@@ -10,12 +10,12 @@
 
 ## 📋 Table of Contents
 
-- [About](## 🎯 About)
+- [About](#-about)
 - [Project Status](#-project-status)
 - [Repository Structure](#-repository-structure)
 - [Completed Work](#-completed-work)
 - [Active Work](#-active-work)
-- [Roadmap](#-roadmap)
+- [Roadmap](#️-roadmap)
 - [Contributing](#-contributing)
 - [Contact](#-contact)
 
@@ -352,7 +352,7 @@ No single person is critical. Structure must survive people coming and going.
 
 ## 📞 Contact
 
-**Discord:** [Join our server](#) (link to be added)
+**Discord:** [Join our server](https://discord.gg/gQfvdkEMrt)
 **Email:** [info@techguilds.au](info@techguilds.au)
 **Legacy Site:** [melbourne-rpi.com.au](https://melbourne-rpi.com.au) (being phased out)
 
