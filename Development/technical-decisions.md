@@ -1,6 +1,8 @@
+# Claude AI on the Pros and Cons of WordPress vs Node.JS
+
 ## WordPress (CMS)
 
-### Pros:
+### WordPress Pros
 
 * **Quick to launch** - Can have a professional site running in days, not months
 * **No coding required for basic changes** - Your non-technical members can update content, add events, post projects
@@ -11,7 +13,7 @@
 * **Community support** - Huge community, endless tutorials, easy to find help
 * **Multiple contributors** - Easy to give different people different access levels (guild coordinators can manage their sections)
 
-### Cons:
+### WordPress Cons
 
 * **Performance limitations** - Can be slower, especially with many plugins
 * **Security concerns** - Popular target for attacks, requires diligent updates
@@ -22,7 +24,7 @@
 
 ## Node.js (Custom Build)
 
-### Pros:
+### Node.js Pros
 
 * **Complete control** - Build exactly what you want, no compromises
 * **Modern tech stack** - React, Next.js, etc. - very performant and flexible
@@ -33,7 +35,7 @@
 * **API-first** - Easy to integrate with Discord, external services
 * **Developer-friendly** - If you have skilled devs in the group, they'll love working with it
 
-### Cons:
+### Node.js Cons
 
 * **Time investment** - Months to build vs. days for WordPress
 * **Requires ongoing dev skills** - Need JavaScript/Node developers for maintenance and updates
@@ -43,7 +45,7 @@
 * **Reinventing wheels** - Event calendars, user management, etc. all need to be built or integrated
 * **Bus factor risk** - If your lead developer leaves, who maintains it?
 
-## My Recommendation for Melbourne Tech Guilds:
+## My Recommendation for Melbourne Tech Guilds
 
 ### **Start with WordPress, Plan for Evolution**
 
@@ -68,7 +70,7 @@
 * Custom Node.js tools for: Concierge registration, project tracking, guild dashboards
 * They can coexist and link to each other
 
-### Questions to Help Decide:
+### Questions to Help Decide
 
 1. **Do you have 2-3 committed JavaScript developers?** (Not just skilled, but committed to maintaining it)
 2. **How soon do you need to launch?** (Weeks = WordPress, Months = Custom)

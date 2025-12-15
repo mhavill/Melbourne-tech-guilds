@@ -61,7 +61,7 @@ We are restructuring from our origins as a Raspberry Pi-focused group to a broad
 
 ## 📁 Repository Structure
 
-```
+```text
 melbourne-tech-guilds/
 ├── README.md                          # This file
 ├── docs/
@@ -186,7 +186,7 @@ Comprehensive Trello board template with:
 - Priority labeling system (P0-P3)
 - Role-based task categorization
 
-**Status:** ✅ Complete - ready to implement in Trello - Account: https://trello.com/invite/b/69367bca3b735f340e525453/ATTI482748f8a1f2d56534c455bef4d692a238AFE138/mtg-website-development
+**Status:** ✅ Complete - ready to implement in Trello - Account: [mtg-website-development](https://trello.com/invite/b/69367bca3b735f340e525453/ATTI482748f8a1f2d56534c455bef4d692a238AFE138/mtg-website-development)
 
 ---
 
@@ -353,7 +353,7 @@ No single person is critical. Structure must survive people coming and going.
 ## 📞 Contact
 
 **Discord:** [Join our server](#) (link to be added)
-**Email:** info@techguilds.au (to be configured)
+**Email:** [info@techguilds.au](info@techguilds.au)
 **Legacy Site:** [melbourne-rpi.com.au](https://melbourne-rpi.com.au) (being phased out)
 
 ---
