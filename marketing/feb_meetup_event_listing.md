@@ -1,4 +1,4 @@
-# 🛠️ Melbourne Tech Guilds Monthly Meetup
+# Monthly Meeting in Library at the Dock
 
 ## Build. Share. Learn. Collaborate.
 
@@ -9,12 +9,13 @@
 ## 📅 When
 
 **Sunday, 1st February 2026**
-**2:00 PM - 5:00 PM**
+**12:30 PM - 4:30 PM**
 
 ## 📍 Where
 
-**Docklands Library**
-[Address to be added]
+**Library at the Dock**
+107 Victoria Harbour Promenade, Docklands
+Meeting room 1, Second Floor (near the Makerspace)
 
 ---
 
@@ -35,7 +36,7 @@ Whether you're into one or all of these, you'll find your people:
 • **Mechanics** - 3D printing, CNC, CAD/CAM
 • **IoT** - ESP32, Arduino, Raspberry Pi, home automation
 • **Coding** - Embedded systems, Python, C/C++
-• **Deep Dive** - Electronics, applied math, engineering theory
+• **Deep Dive** - Electronics, applied maths, engineering theory
 
 ---
 
@@ -74,9 +75,9 @@ Whether you're into one or all of these, you'll find your people:
 
 ## 🔗 Stay Connected
 
-**Website:** melbourne.techguilds.au
-**Discord:** [link]
-**Email:** info@techguilds.au
+**Website:** [melbourne.techguilds.au](melbourne.techguilds.au)
+**Discord:** [Make, Innovate, Create](https://discord.gg/Qy6qd2Vm46)
+**Email:** [info@techguilds.au](info@techguilds.au)
 
 ---
 
