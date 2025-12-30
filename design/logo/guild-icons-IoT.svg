@@ -1,0 +1,58 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for each guild -->
+    <linearGradient id="iotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+ 
+  <!-- IoT GUILD -->
+  <g transform="translate(100, 100)">
+    <!-- Background circle -->
+    <circle cx="0" cy="0" r="80" fill="url(#iotGrad)"/>
+    
+    <!-- Microcontroller chip -->
+    <rect x="-25" y="-25" width="50" height="50" rx="4" fill="white" opacity="0.9"/>
+    
+    <!-- Chip pins -->
+    <g fill="#00f2fe" opacity="0.7">
+      <rect x="-30" y="-18" width="5" height="3"/>
+      <rect x="-30" y="-8" width="5" height="3"/>
+      <rect x="-30" y="2" width="5" height="3"/>
+      <rect x="-30" y="12" width="5" height="3"/>
+      
+      <rect x="25" y="-18" width="5" height="3"/>
+      <rect x="25" y="-8" width="5" height="3"/>
+      <rect x="25" y="2" width="5" height="3"/>
+      <rect x="25" y="12" width="5" height="3"/>
+      
+      <rect x="-18" y="-30" width="3" height="5"/>
+      <rect x="-8" y="-30" width="3" height="5"/>
+      <rect x="2" y="-30" width="3" height="5"/>
+      <rect x="12" y="-30" width="3" height="5"/>
+      
+      <rect x="-18" y="25" width="3" height="5"/>
+      <rect x="-8" y="25" width="3" height="5"/>
+      <rect x="2" y="25" width="3" height="5"/>
+      <rect x="12" y="25" width="3" height="5"/>
+    </g>
+    
+    <!-- Chip label -->
+    <text x="0" y="5" font-family="monospace" font-size="10" font-weight="bold" 
+          fill="#00f2fe" text-anchor="middle">ESP32</text>
+    
+    <!-- Wireless signal -->
+    <g stroke="white" fill="none" stroke-width="2" opacity="0.7">
+      <path d="M -35,-35 Q -30,-30 -25,-35"/>
+      <path d="M -40,-40 Q -30,-30 -20,-40"/>
+      <path d="M -45,-45 Q -30,-30 -15,-45"/>
+    </g>
+    
+    <!-- Label -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+          fill="#00f2fe" text-anchor="middle">IoT</text>
+  </g>
+
+</svg>
