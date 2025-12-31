@@ -108,7 +108,7 @@
       <text x="80" y="108" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Sanders</text>
       <text x="80" y="124" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Routers</text>
       <text x="80" y="140" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Jigsaws</text>
-      <text x="80" y="156" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">3D Printers</text>
+      <text x="80" y="156" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Mills</text>
     </g>
 
     <!-- Arrow -->
@@ -119,12 +119,12 @@
       <circle cx="80" cy="30" r="25" fill="#ff6b6b" opacity="0.3"/>
       <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🤖</text>
       <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
-            fill="#2d3436" text-anchor="middle">CNC</text>
-      <text x="80" y="92" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">CNC Mills</text>
-      <text x="80" y="108" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Lathes</text>
-      <text x="80" y="124" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Laser Cutters</text>
-      <text x="80" y="140" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Plasma Cutters</text>
-      <text x="80" y="156" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Wire EDM</text>
+            fill="#2d3436" text-anchor="middle">CAE</text>
+      <text x="80" y="92" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">3D Printers</text>
+      <text x="80" y="108" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">CNC Mills</text>
+      <text x="80" y="124" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Lathes</text>
+      <text x="80" y="140" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Laser Cutters</text>
+      <text x="80" y="156" font-family="Arial, sans-serif" font-size="12" fill="#636e72" text-anchor="middle">Plasma Cutters</text>
     </g>
   </g>
 
