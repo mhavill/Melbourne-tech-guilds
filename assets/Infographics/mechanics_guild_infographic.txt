@@ -1,0 +1,106 @@
+MECHANICS GUILD
+From Hand Tools to CAE - Design to Delivery
+🔧 TOOLS PROGRESSION
+Hand Tools
+    Hammers
+    Screwdrivers
+    Wrenches
+    Files and Saws
+    Measuring Tools
+Power Tools
+    Drills
+    Sanders
+    Routers
+    Jigsaws
+    Mills
+CAE
+    3D Printers
+    CNC Mills
+    Laser Cutters
+    Plasma Cutters
+
+📐 DESIGN PROCESS
+Concept
+    Sketching
+    Ideation
+    Requirements
+    Constraints
+    Use Cases
+Engineering
+    CAD Model
+    Detail Drawings
+    Tolerances
+    Materials
+    FEA/CAE
+    Simulations
+Considerations
+    Economy
+    Ecology
+    Environmental
+    Life Cycle
+    Sustainability
+
+🔨 MAKING METHODS
+Prototyping
+    Rapid prototyping
+    Mock-ups, Test builds
+Additive
+    3D Printing, FDM
+    SLA, SLS, Metal printing
+Subtractive
+    Milling, Turning
+    Drilling, Cutting, Grinding
+Joinery
+    Welding, Brazing
+    Fasteners, Adhesives
+Finishing
+    Sanding, Polishing
+    Coating, Anodizing
+Assembly
+    Integration
+    Quality control
+
+🔬 TESTING AND VALIDATION
+Non-Destructive
+    Visual inspection, Dimensional checks
+    Ultrasonic, X-ray, Dye penetrant
+    Function testing, Performance validation
+Destructive
+    Tensile, Compression, Fatigue
+    Impact, Hardness, Stress testing
+    Failure analysis, Life cycle testing
+
+⚠️ SAFETY AND LEGAL
+Manufacturing Safety
+    PPE (goggles, gloves, ears)
+    Machine guarding
+    Lockout/Tagout procedures
+    Material handling
+    Ventilation and dust control
+    Emergency procedures
+Legal and Liability
+    Product liability
+    Standards compliance
+    Workplace safety regulations
+    Installation safet
+    User documentation
+
+💡 ADDITIONAL TOPICS
+Reverse Engineering
+    Measuring and replicating
+    existing parts
+Documentation
+    Assembly instructions
+    Maintenance manuals
+Tool Maintenance
+    Calibration and care
+    Tool selection
+Cost Estimation
+    Material costs
+    Time and labour
+Repair and Retrofit
+    Fixing broken parts
+    Upgrading systems
+Material Science
+    Properties and selection
+    Composites and alloys
