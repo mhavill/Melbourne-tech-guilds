@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-        <mxGraphModel dx="1648" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2690" dy="1102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -31,7 +31,7 @@
                 <mxCell id="jhgkUV9bIrQpcfhJSjc1-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=11;" parent="dNxyNK7c78bLwvsdeMH5-20" source="jhgkUV9bIrQpcfhJSjc1-2" target="jhgkUV9bIrQpcfhJSjc1-17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="milestones" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="jhgkUV9bIrQpcfhJSjc1-18">
+                <mxCell id="2" value="milestones" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" parent="jhgkUV9bIrQpcfhJSjc1-18" vertex="1" connectable="0">
                     <mxGeometry x="-0.0851" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
@@ -63,10 +63,10 @@
                 <mxCell id="dNxyNK7c78bLwvsdeMH5-26" value="&lt;span id=&quot;docs-internal-guid-3a85994f-7fff-e263-a66d-2a5dbfce0957&quot;&gt;&lt;span style=&quot;background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;2. Guild placement&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
                     <mxGeometry x="120" y="30" width="80" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="jhgkUV9bIrQpcfhJSjc1-8" value="4a.AP search" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;fontFamily=Helvetica;fontSize=11;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
+                <mxCell id="jhgkUV9bIrQpcfhJSjc1-8" value="4a.GB search" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;fontFamily=Helvetica;fontSize=11;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
                     <mxGeometry x="260" y="30" width="80" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="dNxyNK7c78bLwvsdeMH5-22" value="Accountability&lt;div&gt;Partner&lt;/div&gt;" style="swimlane;html=1;startSize=30;horizontal=0;fontFamily=Helvetica;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+                <mxCell id="dNxyNK7c78bLwvsdeMH5-22" value="Guild Buddy" style="swimlane;html=1;startSize=30;horizontal=0;fontFamily=Helvetica;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
                     <mxGeometry x="20" y="240" width="950" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="jhgkUV9bIrQpcfhJSjc1-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=11;" parent="dNxyNK7c78bLwvsdeMH5-22" source="dNxyNK7c78bLwvsdeMH5-34" target="jhgkUV9bIrQpcfhJSjc1-12" edge="1">
