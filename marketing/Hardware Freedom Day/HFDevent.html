@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardware Freedom Day – Melbourne Tech Guilds</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Exo+2:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #060a14;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 32px 16px;
+    font-family: 'Exo 2', sans-serif;
+  }
+
+  .poster {
+    width: 100%;
+    max-width: 860px;
+    background: #0a0e1a;
+    color: #e8eaf0;
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid rgba(255,255,255,0.1);
+  }
+
+  /* ── Circuit background ── */
+  .circuit-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0.055;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Gradient top bar ── */
+  .top-bar {
+    height: 3px;
+    background: linear-gradient(90deg, #00d4aa 0%, #4488ff 50%, #aa44ff 100%);
+  }
+
+  /* ── Header ── */
+  .header {
+    padding: 32px 40px 28px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 0.5px solid rgba(255,255,255,0.07);
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .header-left { flex: 1; min-width: 280px; }
+
+  .hfd-badge {
+    display: inline-block;
+    border: 1.5px solid #00d4aa;
+    color: #00d4aa;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+  }
+
+  .main-title {
+    font-size: clamp(28px, 4.5vw, 46px);
+    font-weight: 800;
+    line-height: 1.05;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .main-title .accent {
+    background: linear-gradient(90deg, #00d4aa, #4488ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: #7788aa;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+  }
+
+  /* ── Logo placeholders ── */
+  .logos-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+  .logo-block { text-align: center; }
+
+  .logo-slot {
+    
+    height: 72px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1.5px dashed;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .logo-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .logo-mtg { border-color: #00d4aa; color: #00d4aa; background: rgba(0,212,170,0.06); }
+  .logo-luv { border-color: #4488ff; color: #4488ff; background: rgba(68,136,255,0.06); }
+
+  .logo-label {
+    font-size: 9px;
+    color: #445566;
+    font-family: 'Space Mono', monospace;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Event meta chips ── */
+  .event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .meta-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 0.5px solid rgba(255,255,255,0.13);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e8eaf0;
+  }
+
+  .chip-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .dot-teal { background: #00d4aa; }
+  .dot-blue { background: #4488ff; }
+  .dot-orange { background: #ff7744; }
+
+  /* ── Section blocks ── */
+  .section {
+    padding: 28px 40px;
+    border-top: 0.5px solid rgba(255,255,255,0.07);
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: #00d4aa;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;
+    background: rgba(0,212,170,0.2);
+  }
+
+  /* ── Intro + feature pills ── */
+  .intro-text {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #9aaabb;
+    margin-bottom: 22px;
+  }
+
+  .features-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .feature-card {
+    background: rgba(255,255,255,0.04);
+    border: 0.5px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+    padding: 16px;
+  }
+
+  .feature-icon { font-size: 22px; margin-bottom: 8px; }
+
+  .feature-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+
+  .feature-desc {
+    font-size: 12px;
+    color: #556688;
+    color: #667788;
+    line-height: 1.5;
+  }
+
+  /* ── Projects grid ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .project-card {
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  /*
+    ── Project image slots ──
+    Replace src="" in each <img> below with your image file path, e.g.:
+      src="images/minimax.jpg"
+    The image will fill the slot at 16:9 ratio.
+    If no image is supplied the placeholder text is shown instead.
+  */
+ .project-img-slot {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #111722;
+    border-bottom: 0.5px solid rgba(255,255,255,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .project-img-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .img-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+  }
+
+  .img-placeholder-icon { font-size: 28px; opacity: 0.2; }
+
+  .img-placeholder-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.18);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Accent left border per project */
+  .project-card:nth-child(1) .project-img-slot { border-top: 2px solid #00d4aa; }
+  .project-card:nth-child(2) .project-img-slot { border-top: 2px solid #4488ff; }
+  .project-card:nth-child(3) .project-img-slot { border-top: 2px solid #ff7744; }
+  .project-card:nth-child(4) .project-img-slot { border-top: 2px solid #cc44ee; }
+  .project-card:nth-child(5) .project-img-slot { border-top: 2px solid #ffaa22; }
+  .project-card:nth-child(6) .project-img-slot { border-top: 2px solid #44eebb; }
+
+  .project-body {
+    padding: 14px 16px 16px;
+    flex: 1;
+  }
+
+  .project-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+
+  .project-card:nth-child(1) .project-name { color: #00d4aa; }
+  .project-card:nth-child(2) .project-name { color: #6699ff; }
+  .project-card:nth-child(3) .project-name { color: #ff8855; }
+  .project-card:nth-child(4) .project-name { color: #dd66ff; }
+  .project-card:nth-child(5) .project-name { color: #ffbb44; }
+  .project-card:nth-child(6) .project-name { color: #44eebb; }
+
+  .project-desc {
+    font-size: 13px;
+    color: #7788aa;
+    line-height: 1.55;
+  }
+
+  /* ── Lightning talks ── */
+  .talks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .talk-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 11px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(255,255,255,0.07);
+    border-radius: 7px;
+    transition: background 0.2s;
+  }
+
+  .talk-item:hover { background: rgba(255,255,255,0.05); }
+
+  .talk-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #4488ff;
+    min-width: 26px;
+    font-weight: 700;
+  }
+
+  .talk-title {
+    font-size: 14px;
+    color: #c0cce0;
+    line-height: 1.4;
+  }
+
+  .talk-arrow {
+    margin-left: auto;
+    color: rgba(255,255,255,0.15);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* ── CTA footer ── */
+  .footer-cta {
+    background: linear-gradient(135deg, rgba(0,212,170,0.1) 0%, rgba(68,136,255,0.1) 100%);
+    border-top: 1px solid rgba(0,212,170,0.25);
+    padding: 28px 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-taglines {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 28px;
+    margin-bottom: 18px;
+  }
+
+  .cta-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00d4aa;
+  }
+
+  .cta-tag::before { content: '⟩ '; color: rgba(0,212,170,0.4); }
+
+  .cta-main {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .cta-sub {
+    font-size: 13px;
+    color: #667788;
+    font-family: 'Space Mono', monospace;
+  }
+
+  /* ── Footnote ── */
+  .footnote {
+    padding: 14px 40px 20px;
+    border-top: 0.5px solid rgba(255,255,255,0.05);
+    font-size: 11px;
+    color: #334455;
+    font-family: 'Space Mono', monospace;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footnote a {
+    color: #336688;
+    text-decoration: none;
+  }
+
+  .footnote a:hover { color: #00d4aa; }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    .header { padding: 24px 24px 20px; }
+    .section { padding: 22px 24px; }
+    .footer-cta { padding: 22px 24px; }
+    .footnote { padding: 14px 24px 18px; }
+    .features-row { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .logos-row { gap: 10px; }
+    .logo-slot { width: 500px; height: 58px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="poster">
+
+  <!-- Circuit SVG background -->
+  <svg class="circuit-bg" viewBox="0 0 860 1400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <g stroke="#00d4aa" stroke-width="1" fill="none">
+      <polyline points="0,80 70,80 90,100 230,100"/>
+      <polyline points="230,100 230,170 280,170"/>
+      <circle cx="230" cy="100" r="4" fill="#00d4aa"/>
+      <circle cx="280" cy="170" r="3"/>
+      <polyline points="350,40 350,90 430,90 460,60 600,60"/>
+      <circle cx="460" cy="60" r="4" fill="#00d4aa"/>
+      <polyline points="600,60 630,90 720,90"/>
+      <polyline points="720,90 720,160 770,160 860,110"/>
+      <polyline points="0,230 100,230 120,250 220,250 220,310"/>
+      <polyline points="220,310 270,310 290,330 480,330"/>
+      <circle cx="220" cy="310" r="4" fill="#4488ff"/>
+      <polyline points="480,330 510,360 510,440 560,440"/>
+      <polyline points="600,290 600,340 670,340 700,310 860,310"/>
+      <polyline points="120,460 200,460 220,480 360,480"/>
+      <polyline points="360,480 390,510 480,510 480,570"/>
+      <circle cx="360" cy="480" r="3" stroke="#4488ff"/>
+      <polyline points="700,440 760,440 790,410 860,410"/>
+      <polyline points="0,570 80,570 100,590 240,590 240,650 290,650"/>
+      <polyline points="290,650 340,650 360,630 590,630"/>
+      <polyline points="590,630 620,600 720,600 750,570 860,570"/>
+      <polyline points="0,760 80,760 100,780 220,780"/>
+      <polyline points="220,780 260,780 280,760 500,760"/>
+      <polyline points="500,760 530,730 700,730 730,700 860,700"/>
+      <polyline points="0,900 120,900 140,920 300,920 300,980"/>
+      <polyline points="300,980 350,980 370,960 600,960"/>
+      <circle cx="300" cy="980" r="4" fill="#00d4aa"/>
+      <polyline points="600,960 640,930 860,930"/>
+      <polyline points="0,1060 90,1060 110,1080 280,1080"/>
+      <polyline points="280,1080 320,1080 340,1060 560,1060 580,1040 860,1040"/>
+      <!-- IC chips -->
+      <rect x="225" y="95" width="18" height="10" rx="2"/>
+      <rect x="455" y="55" width="10" height="10" rx="2"/>
+      <rect x="725" y="155" width="10" height="10" rx="2"/>
+      <rect x="215" y="305" width="10" height="10" rx="2"/>
+      <rect x="505" y="435" width="10" height="10" rx="2"/>
+      <rect x="475" y="505" width="10" height="10" rx="2"/>
+      <rect x="295" y="975" width="10" height="10" rx="2"/>
+      <rect x="275" y="1075" width="10" height="10" rx="2"/>
+    </g>
+  </svg>
+
+  <div class="top-bar"></div>
+
+  <!-- ── Header ── -->
+  <div class="header">
+    <div class="header-top">
+      <div class="header-left">
+        <div class="hfd-badge">Hardware Freedom Day</div>
+        <div class="main-title">
+          <span class="accent">Open Hardware</span><br>
+          Exhibition &amp; Showcase
+        </div>
+        <div class="subtitle">
+          Celebrating the spirit of open hardware &amp; maker culture
+        </div>
+      </div>
+
+      <div class="logos-row">
+        <div class="logo-block">
+          <!-- Replace the text inside .logo-slot with <img src="hfd-logo.png"> to use your logo -->
+          <div class="logo-slot logo-mtg"><img src="mtg-logo-transparent-v2.png"></div>
+
+        </div>
+        <div class="logo-block">
+          <!-- Replace the text inside .logo-slot with <img src="mtg-logo.png"> to use your logo -->
+          <div class="logo-slot logo-luv"><img src="LUV-Logo.png"></div>
+         </div>
+      </div>
+    </div>
+
+    <div class="event-meta">
+      <div class="meta-chip">
+        <div class="chip-dot dot-teal"></div>
+        11:00 am – 4:00 pm
+      </div>
+      <div class="meta-chip">
+        <div class="chip-dot dot-blue"></div>
+        Saturday 18 April 2025
+      </div>
+      <div class="meta-chip">
+        <div class="chip-dot dot-orange"></div>
+        <a href="https://www.inspire9.com/" target="_blank" rel="noopener noreferrer">Inspire9, Melbourne</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Intro & features ── -->
+  <div class="section">
+    <div class="intro-text">
+      Melbourne Tech Guilds is proud to support Hardware Freedom Day — bringing together expert makers, engineers, and tinkerers to share real working projects. Come and see what's possible when you open up hardware, and connect with Melbourne's vibrant maker community.
+    </div>
+    <div class="features-row">
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <div class="feature-title">Live Demonstrations</div>
+        <div class="feature-desc">See systems built from scratch, running live and ready to explore</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎤</div>
+        <div class="feature-title">Lightning Talks</div>
+        <div class="feature-desc">Quick, sharp insights straight from the makers themselves</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <div class="feature-title">Meet the Makers</div>
+        <div class="feature-desc">Chat, share experiences, and get inspired by fellow creators</div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ═══════════════════════════════════════════
+       PROJECTS
+       For each project, replace src="" with your
+       image path, e.g. src="images/minimax.jpg"
+       ═══════════════════════════════════════════ -->
+ <div class="section">
+    <div class="section-label">Projects on show</div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img-slot">
+          <!-- TO ADD IMAGE: put the filename between the quotes, e.g. src="minimax.jpg" -->
+          <img src="minimax.jpg" alt="Minimax robot">
+        </div>
+        <div class="project-body">
+          <div class="project-name">Minimax</div>
+          <div class="project-desc">Multifunction wheeled robot with built-in Machine Learning capabilities</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-slot">
+          <!-- TO ADD IMAGE: put the filename between the quotes, e.g. src="robokitty.jpg" -->
+          <img src="robokitty.jpg" alt="RoboKitty">
+          <div class="img-placeholder"><div class="img-placeholder-icon">🐾</div><div class="img-placeholder-text">Add image</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">RoboKitty</div>
+          <div class="project-desc">Open-source four-legged platform with custom movement algorithms in development</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-slot">
+          <!-- TO ADD IMAGE: put the filename between the quotes, e.g. src="robot-arm.jpg" -->
+          <img src="robotarm.jpg" alt="Robot Arm">
+          <div class="img-placeholder"><div class="img-placeholder-icon">🦾</div><div class="img-placeholder-text">Add image</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Robot Arm</div>
+          <div class="project-desc">A commercial arm hacked to provide greater user control and programmability</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-slot">
+          <!-- TO ADD IMAGE: put the filename between the quotes, e.g. src="sparknodes.jpg" -->
+          <img src="sparknodes.jpg" alt="SparkNodes swarm">
+          <div class="img-placeholder"><div class="img-placeholder-icon">✨</div><div class="img-placeholder-text">Add image</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">SparkNodes</div>
+          <div class="project-desc">A collection of ultra-low-cost robots that move and operate as an intelligent swarm</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-slot">
+          <!-- TO ADD IMAGE: put the filename between the quotes, e.g. src="smarthome.jpg" -->
+          <img src="smarthome.png" alt="Smart Home automation">
+          <div class="img-placeholder"><div class="img-placeholder-icon">🏠</div><div class="img-placeholder-text">Add image</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Smart Home</div>
+          <div class="project-desc">Home automation with remote smart sensors and central management</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-slot">
+          <!-- TO ADD IMAGE: put the filename between the quotes, e.g. src="lightbox.jpg" -->
+          <img src="lightbox.jpg" alt="LightBox LED display">
+          <div class="img-placeholder"><div class="img-placeholder-icon">💡</div><div class="img-placeholder-text">Add image</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">LightBox</div>
+          <div class="project-desc">A 64×32 LED unit displaying custom text, animations and a VU meter</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- ── Lightning Talks ── -->
+  <div class="section">
+    <div class="section-label">Lightning talks</div>
+    <div class="talks-list">
+      <div class="talk-item">
+        <div class="talk-num">01</div>
+        <div class="talk-title">Minimax — the making of a machine learning robot</div>
+        <div class="talk-arrow">›</div>
+      </div>
+      <div class="talk-item">
+        <div class="talk-num">02</div>
+        <div class="talk-title">Robot Arm hack — taking commercial hardware further</div>
+        <div class="talk-arrow">›</div>
+      </div>
+      <div class="talk-item">
+        <div class="talk-num">03</div>
+        <div class="talk-title">SparkNodes — demonstrating mathematics in real life</div>
+        <div class="talk-arrow">›</div>
+      </div>
+      <div class="talk-item">
+        <div class="talk-num">04</div>
+        <div class="talk-title">Two tracks to nowhere — how poor documentation can derail a project</div>
+        <div class="talk-arrow">›</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Also attending ── -->
+  <div class="section" style="padding-top: 20px; padding-bottom: 20px;">
+    <p style="font-size:14px; color:#7788aa; line-height:1.7;">
+      Alongside Melbourne Tech Guilds there will be other Melbourne-based creative groups and makerspaces. Come along to meet and chat with tech engineers who have a passion for sharing what they know.
+    </p>
+  </div>
+
+  <!-- ── CTA ── -->
+  <div class="footer-cta">
+    <div class="cta-taglines">
+      <div class="cta-tag">Be inspired</div>
+      <div class="cta-tag">Share your maker story</div>
+      <div class="cta-tag">Connect with the community</div>
+    </div>
+    <div class="cta-main">Come along and meet the makers!</div>
+    <div class="cta-sub">Melbourne Tech Guilds · plus other Melbourne makerspaces &amp; creative groups</div>
+  </div>
+
+  <!-- ── Footnote ── -->
+  <div class="footnote">
+    * <strong style="color:#445566;">What is Hardware Freedom Day?</strong>
+    Hardware Freedom Day is an annual celebration organised by the Digital Freedom Foundation — celebrating the spirit of open hardware and making more people aware of using and contributing to free and open hardware projects.
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Hardware_Freedom_Day" target="_blank">wikipedia.org/wiki/Hardware_Freedom_Day</a>
+  </div>
+
+</div>
+
+
+</body>
+</html>

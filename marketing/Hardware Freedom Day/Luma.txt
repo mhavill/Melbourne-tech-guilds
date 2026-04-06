@@ -1,0 +1,33 @@
+
+Hardware Freedom Day — Open Hardware Exhibition & Showcase
+
+Join Melbourne Tech Guilds in collaboration with Linux Users Victoria as we celebrate Hardware Freedom Day — an annual event dedicated to the spirit of open hardware and maker culture.
+Come and see real working projects built by local makers, hear directly from the people who designed and built them, and connect with Melbourne's vibrant maker and tech community.
+📅 Date: Saturday 18 April 2025
+🕚 Time: 11:00 am – 4:00 pm
+📍 Venue: Inspire9, Melbourne
+
+What's on
+Live demonstrations of systems our members have built from scratch, lightning talks covering project challenges and successes, and plenty of opportunity to meet and chat with engineers who love to share what they know.
+Alongside Melbourne Tech Guilds there will be other Melbourne-based creative groups and makerspaces — so expect a full and lively event.
+
+Projects on show
+🤖 Minimax — Multifunction wheeled robot with built-in Machine Learning capabilities
+🐾 RoboKitty — Open-source four-legged platform with custom movement algorithms in development
+🦾 Robot Arm — A commercial arm hacked to provide greater user control and programmability
+✨ SparkNodes — A collection of ultra-low-cost robots that move and operate as an intelligent swarm
+🏠 Smart Home — Home automation with remote smart sensors and central management
+💡 LightBox — A 64×32 LED unit displaying custom text, animations and a VU meter
+
+Lightning Talks
+
+Minimax — the making of a machine learning robot
+Robot Arm hack — taking commercial hardware further
+SparkNodes — demonstrating mathematics in real life
+Two tracks to nowhere — how poor documentation can derail a project
+
+
+Be inspired. Share your maker story. Connect with the community.
+Come along and meet the makers — all are welcome, no technical knowledge required!
+
+Hardware Freedom Day is an annual celebration organised by the Digital Freedom Foundation, promoting the use of and contribution to free and open hardware projects. More info: wikipedia.org/wiki/Hardware_Freedom_Day
